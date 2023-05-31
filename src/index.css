@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*
+    ESTRUTUTA PADRÃO DA PÁGINA
+*/
+
 *{
     margin: 0px;
+    font-family: 'Inter', sans-serif;
+
 }
+
+/*
+    PARTE SUPERIOR
+*/
+
+header{
+    background-image: url(/src/images/bg-header.svg);
+    position: absolute;
+    width: 1440px;
+    height: 560px;
+}
+    #imagem-logo-header{
+        position: absolute;
+        width: 125px;
+        height: 62px;
+        margin-top: 52px;
+        margin-left: 56px;
+    }
+    #h1-header{
+        position: absolute;
+        width: 536px;
+        height: 102px;
+        left: 172px;
+        top: 185px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 128.5%;
+        color: #FFFFFF;
+    }
+    #p-header{
+        position: absolute;
+        width: 536px;
+        height: 90px;
+        left: 172px;
+        top: 319px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }

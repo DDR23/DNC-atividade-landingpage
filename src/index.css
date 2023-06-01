@@ -59,8 +59,51 @@ section#barra-cinza{
 }
     p.icone-lateral{
         display: flex;
-        align-items: center;
+        align-items: center;font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
     }
     p.icone-lateral img{
         margin: 0px 10px 0px 0px;
+    }
+
+
+                    /*AREA DO VIDEO*/
+
+section#area-video{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    background-color: #ffffff;
+    color: #383838;
+}
+    iframe{
+        margin: 80px 14px 80px 172px;
+    }
+    #info-area-video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 52px;
+    }
+    #info-area-video h1{
+        width: 496px;
+        height: 96px;font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #247BA0;
+    }
+    #info-area-video p{
+        margin-top: 24px;
+        width: 496px;
+        height: 144px;font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #383838;
     }

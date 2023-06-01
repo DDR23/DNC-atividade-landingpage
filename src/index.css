@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+
+
                     /*ESTRUTUTA PADRÃO DA PÁGINA*/
 
 *{
-    margin: 0px;
+    margin: 0 auto;
     font-family: 'Inter', sans-serif;
 }
 body{
-    display: flex;
-    justify-content: center;
-    background-color: black;
+    background-color: rgb(0, 4, 19);
 }
-
-
-
 
 
 
@@ -48,4 +45,22 @@ header{
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
+    }
+
+
+                    /*AREA CINZA*/
+
+section#barra-cinza{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 170px;
+    background-color: #EAECE5;
+}
+    p.icone-lateral{
+        display: flex;
+        align-items: center;
+    }
+    p.icone-lateral img{
+        margin: 0px 10px 0px 0px;
     }

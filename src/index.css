@@ -18,13 +18,12 @@ body{
 
 header{
     background-image: url(/src/images/bg-header.svg);
-    width: 1440px;
+    width: 1424px;
     height: 560px;
     color: #ffffff;
 }
     #imagem-logo-header{
-        margin-top: 52px;
-        margin-left: 56px;
+        margin: 52px 0px 0px 56px;
     }
     #h1-header{
         margin: 71px 0px 0px 172px;
@@ -53,7 +52,7 @@ header{
 section#barra-cinza{
     display: flex;
     align-items: center;
-    width: 1440px;
+    width: 1424px;
     height: 170px;
     background-color: #EAECE5;
 }
@@ -75,7 +74,7 @@ section#barra-cinza{
 section#area-video{
     display: flex;
     align-items: center;
-    width: 1440px;
+    width: 1424px;
     background-color: #ffffff;
     color: #383838;
 }
@@ -83,14 +82,15 @@ section#area-video{
         margin: 80px 14px 80px 172px;
     }
     #info-area-video{
+        margin: 0px 0px 0px 52px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 52px;
     }
     #info-area-video h1{
         width: 496px;
-        height: 96px;font-family: 'Inter';
+        height: 96px;
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -98,7 +98,7 @@ section#area-video{
         color: #247BA0;
     }
     #info-area-video p{
-        margin-top: 24px;
+        margin: 24px 0px 0px 0px;
         width: 496px;
         height: 144px;font-family: 'Inter';
         font-style: normal;
@@ -106,4 +106,43 @@ section#area-video{
         font-size: 16px;
         line-height: 150%;
         color: #383838;
+    }
+
+
+                    /*AREA DE DEPOIMENTOS*/
+
+section#area-depoimentos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1424px;
+    height: 444px;
+    background-color: #247BA0;
+}
+    #area-depoimentos h1{
+        margin: 80px 343px 64px 343px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #EAECE5;
+    }
+    #caixa-depoimento{
+        display: flex;
+        align-items: center
+    }
+    #seta-esquerda{
+        color: #247BA0;
+        cursor: default;
+    }
+    #caixa-depoimento img{
+        margin: 0px 18px;   
+    }
+    #depoimentobruna{
+        display: none;
+    }
+    #seta-direita{
+        color: #EAECE5;
+        cursor: pointer;
     }

@@ -10,6 +10,7 @@ Site com informações, formulário de captura e redirecionamento para ementa da
 -JAVASCRIPT
 
 ## Hospedado
-dnc-atividade-landingpage.netlify.app
+- [dnc-atividade-landingpage.netlify.app](https://dnc-atividade-landingpage.netlify.app)
+
 
 **Desenvolvido por DDR23 (André Campos)**

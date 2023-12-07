@@ -1,5 +1,5 @@
 # DNC-atividade-landingpage
-Desafios propostos durante o curso de Desenvolvimento WEB FullStack pela escola DNC
+Atividade propostos durante o curso de Desenvolvimento WEB FullStack pela escola DNC
 
 ## OBJETIVO
 Site com informações, formulário de captura e redirecionamento para ementa da formção de Tecnologia da Escola DNC

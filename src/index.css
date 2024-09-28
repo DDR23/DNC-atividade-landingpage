@@ -1,213 +1,226 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-
-
-                    /*ESTRUTUTA PADRÃO DA PÁGINA*/
-
-*{
-    margin: 0 auto;
-    font-family: 'Inter', sans-serif;
-}
-body{
-    background-color: #02051b;
+/*ESTRUTUTA PADRÃO DA PÁGINA*/
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-
-
-                    /*PARTE SUPERIOR*/
-
-header{
-    background-image: url(/src/images/bg-header.svg);
-    width: 1424px;
-    height: 560px;
-    color: #ffffff;
+body {
+  background-color: #02051b;
 }
-    #imagem-logo-header{
-        margin: 52px 0px 0px 56px;
-    }
-    #h1-header{
-        margin: 71px 0px 0px 172px;
-        width: 536px;
-        height: 102px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 128.5%;
-    }
-    #p-header{
-        margin: 32px 0px 0px 172px;
-        width: 536px;
-        height: 90px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 150%;
-    }
 
-
-                    /*AREA CINZA*/
-
-section#barra-cinza{
-    display: flex;
-    align-items: center;
-    width: 1424px;
-    height: 170px;
-    background-color: #EAECE5;
+/*PARTE SUPERIOR*/
+header {
+  background-image: url(/src/images/bg-header.svg);
+  width: 1424px;
+  height: 560px;
+  color: #ffffff;
 }
-    p.icone-lateral{
-        display: flex;
-        align-items: center;font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 150%;
-    }
-    p.icone-lateral img{
-        margin: 0px 10px 0px 0px;
-    }
 
-
-                    /*AREA DO VIDEO*/
-
-section#area-video{
-    display: flex;
-    align-items: center;
-    width: 1424px;
-    background-color: #ffffff;
-    color: #383838;
+#imagem-logo-header {
+  margin: 52px 0px 0px 56px;
 }
-    iframe{
-        margin: 80px 14px 80px 172px;
-    }
-    #info-area-video{
-        margin: 0px 0px 0px 52px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #info-area-video h1{
-        width: 496px;
-        height: 96px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 150%;
-        color: #247BA0;
-    }
-    #info-area-video p{
-        margin: 24px 0px 0px 0px;
-        width: 496px;
-        height: 144px;font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #383838;
-    }
 
-
-                    /*AREA DE DEPOIMENTOS*/
-
-section#area-depoimentos{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 1424px;
-    height: 444px;
-    background-color: #247BA0;
+#h1-header {
+  margin: 71px 0px 0px 172px;
+  width: 536px;
+  height: 102px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 128.5%;
 }
-    #area-depoimentos h1{
-        margin: 80px 343px 64px 343px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 150%;
-        color: #EAECE5;
-    }
-    #caixa-depoimento{
-        display: flex;
-        align-items: center
-    }
-    #seta-esquerda{
-        color: #247BA0;
-        cursor: default;
-    }
-    #seta-esquerda:hover{
-        transform: translateY(-2px);
-        transition-duration: 0.3s;
-    }
-    #caixa-depoimento img{
-        margin: 0px 18px;   
-    }
-    #depoimentobruna{
-        display: none;
-    }
-    #seta-direita{
-        color: #EAECE5;
-        cursor: pointer;
-    }
-    #seta-direita:hover{
-        transform: translateY(-2px);
-        transition-duration: 0.3s;
-    }
 
-
-                    /*AREA DO FORMULARIO*/
-
-section#area-formulario{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 1424px;
-    background-color: #FFFFFF;
+#p-header {
+  margin: 32px 0px 0px 172px;
+  width: 536px;
+  height: 90px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
 }
-    #area-formulario h1{
-        margin: 22px auto ;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 150%;
-        color: #383838;
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 100px;
 
-    }
-    input{
-        margin-top: 18px;
-        margin-bottom: 18px;
-        padding: 14px;
-        width: 400px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #383838;
-        background: #EAECE5;
-        border-radius: 8px;
-        border: none;
-    }
-    input#button{
-        width: 335px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 150%;
-        color: #FFFFFF;
-        background: #247BA0;
-        border-radius: 8px;
-        cursor: pointer;
-    }
-    input#button:hover{
-        background-color: #2784acee;
-        transition-duration: 0.3s;
-    }
+/*AREA CINZA*/
+section#barra-cinza {
+  display: flex;
+  align-items: center;
+  width: 1424px;
+  height: 170px;
+  background-color: #EAECE5;
+}
+
+p.icone-lateral {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+p.icone-lateral img {
+  margin: 0px 10px 0px 0px;
+}
+
+/*AREA DO VIDEO*/
+section#area-video {
+  display: flex;
+  align-items: center;
+  width: 1424px;
+  background-color: #ffffff;
+  color: #383838;
+}
+
+iframe {
+  margin: 80px 14px 80px 172px;
+}
+
+#info-area-video {
+  margin: 0px 0px 0px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#info-area-video h1 {
+  width: 496px;
+  height: 96px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #247BA0;
+}
+
+#info-area-video p {
+  margin: 24px 0px 0px 0px;
+  width: 496px;
+  height: 144px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #383838;
+}
+
+/*AREA DE DEPOIMENTOS*/
+section#area-depoimentos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1424px;
+  height: 444px;
+  background-color: #247BA0;
+}
+
+#area-depoimentos h1 {
+  margin: 80px 343px 64px 343px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #EAECE5;
+}
+
+#caixa-depoimento {
+  display: flex;
+  align-items: center
+}
+
+#seta-esquerda {
+  color: #247BA0;
+  cursor: default;
+}
+
+#seta-esquerda:hover {
+  transform: translateY(-2px);
+  transition-duration: 0.3s;
+}
+
+#caixa-depoimento img {
+  margin: 0px 18px;
+}
+
+#depoimentobruna {
+  display: none;
+}
+
+#seta-direita {
+  color: #EAECE5;
+  cursor: pointer;
+}
+
+#seta-direita:hover {
+  transform: translateY(-2px);
+  transition-duration: 0.3s;
+}
+
+/*AREA DO FORMULARIO*/
+section#area-formulario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1424px;
+  background-color: #FFFFFF;
+}
+
+#area-formulario h1 {
+  margin: 22px auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #383838;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+}
+
+input {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 14px;
+  width: 400px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #383838;
+  background: #EAECE5;
+  border-radius: 8px;
+  border: none;
+}
+
+input#button {
+  width: 335px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  background: #247BA0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input#button:hover {
+  background-color: #2784acee;
+  transition-duration: 0.3s;
+}

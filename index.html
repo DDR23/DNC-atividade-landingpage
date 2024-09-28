@@ -1,90 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
-    <link rel="stylesheet" href="/src/index.css">
-    <title>Escola DNC</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+  <link rel="stylesheet" href="/src/index.css">
+  <title>Escola DNC</title>
 </head>
+
 <body>
+  <!--PARTE SUPERIOR-->
+  <header>
+    <img id="imagem-logo-header" src="/src/images/logo-dnc.svg" alt="logo-dnc">
+    <h1 id="h1-header">Dê os primeiros passos da sua carreira em Tecnologia</h1>
+    <p id="p-header">Inscreva-se no curso gratuito de Introdução à Tecnologia da DNC School e aprenda os principais
+      fundamentos para construir experiências efetivas.</p>
+  </header>
 
+  <!--AREA CINZA-->
+  <section id="barra-cinza">
+    <div>
+      <p class="icone-lateral"><img src="/src/icons/certificado.svg" alt="">Certificado de conclusão</p>
+    </div>
+    <div>
+      <p class="icone-lateral"><img src="/src/icons/relogio.svg" alt="">4 horas de conteúdo</p>
+    </div>
+    <div>
+      <p class="icone-lateral"><img src="/src/icons/camera.svg" alt="">Aulas online gravadas</p>
+    </div>
+  </section>
 
-    <!--PARTE SUPERIOR-->
+  <!--AREA DO VIDEO-->
+  <section id="area-video">
+    <iframe width="534" height="300" src="https://www.youtube.com/embed/ITxGkd9h4n4?controls=0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div id="info-area-video">
+      <h1>Aprenda com especialistas e comece seu primeiro projeto</h1>
+      <p>Conheça o processo de desenvolvimento e entenda como utilizar os principais métodos e ferramentas da área
+        para resolver problemas complexos. <br><br>
+        Conquiste seu certificado e desenvolva um projeto prático para aplicar seus conhecimentos.</p>
+    </div>
+  </section>
 
-    <header>
-        <img id="imagem-logo-header" src="/src/images/logo-dnc.svg" alt="logo-dnc">
-        <h1 id="h1-header">Dê os primeiros passos da sua carreira em Tecnologia</h1>
-        <p id="p-header">Inscreva-se no curso gratuito de Introdução à Tecnologia da DNC School e aprenda os principais fundamentos para construir experiências efetivas.</p>
-    </header>
-
-
-    <!--AREA CINZA-->
-
-    <section id="barra-cinza">
-        <div>
-            <p class="icone-lateral"><img src="/src/icons/certificado.svg" alt="">Certificado de conclusão</p>
-        </div>
-        <div>
-            <p class="icone-lateral"><img src="/src/icons/relogio.svg" alt="">4 horas de conteúdo</p>
-        </div>
-        <div>
-            <p class="icone-lateral"><img src="/src/icons/camera.svg" alt="">Aulas online gravadas</p>
-        </div>
+  <!--AREA DE DEPOIMENTOS COM FUNCIONALIDADE EM JAVASCRIPT-->
+  <section id="area-depoimentos">
+    <h1>Mais de 500 alunos já iniciaram seus estudos</h1>
+    <section id="caixa-depoimento">
+      <span onclick="rolarParaEsquerda()" id="seta-esquerda" class="material-symbols-outlined">
+        arrow_circle_left
+      </span>
+      <img id="depoimentoleonardo" src="/src/images/depoimentoleonardo.svg" alt="">
+      <img id="depoimentosamantha" src="/src/images/depoimentosamantha.svg" alt="">
+      <img id="depoimentobruna" src="/src/images/depoimentobruna.svg" alt="">
+      <span onclick="RolarParaDireita()" id="seta-direita" class="material-symbols-outlined">
+        arrow_circle_right
+      </span>
     </section>
+  </section>
 
+  <!--AREA DO FORMULÁRIO-->
+  <section id="area-formulario">
+    <h1>Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+    <form>
+      <input type="text" placeholder="Nome" name="Name" required>
+      <input type="email" placeholder="E-mail" name="Email" required>
+      <input type="number" placeholder="Telefone" name="Phone" required>
+      <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+      <input id="button" type="submit" value="Acesse a ementa grátis">
+    </form>
+  </section>
 
-    <!--AREA DO VIDEO-->
+  <!--SCRIPT DO CARROSSEL-->
+  <script src="/src/index.js"></script>
 
-    <section id="area-video">
-        <iframe width="534" height="300" src="https://www.youtube.com/embed/ITxGkd9h4n4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="info-area-video">
-            <h1>Aprenda com especialistas e comece seu primeiro projeto</h1>
-            <p>Conheça o processo de desenvolvimento e entenda como utilizar os principais métodos e ferramentas da área para resolver problemas complexos. <br><br>
-            Conquiste seu certificado e desenvolva um projeto prático para aplicar seus conhecimentos.</p>
-        </div>
-    </section>
-
-
-    <!--AREA DE DEPOIMENTOS COM FUNCIONALIDADE EM JAVASCRIPT-->
-
-    <section id="area-depoimentos">
-        <h1>Mais de 500 alunos já iniciaram seus estudos</h1>
-        <section id="caixa-depoimento">
-            <span onclick="rolarParaEsquerda()" id="seta-esquerda" class="material-symbols-outlined">
-                arrow_circle_left
-                </span>
-            <img id="depoimentoleonardo" src="/src/images/depoimentoleonardo.svg" alt="">
-            <img id="depoimentosamantha" src="/src/images/depoimentosamantha.svg" alt="">
-            <img id="depoimentobruna" src="/src/images/depoimentobruna.svg" alt="">
-            <span onclick="RolarParaDireita()" id="seta-direita" class="material-symbols-outlined">
-                arrow_circle_right
-                </span>
-        </section>
-    </section>
-
-
-    <!--AREA DO FORMULÁRIO-->
-
-    <section id="area-formulario">
-        <h1>Comece agora mesmo e dê o próximo passo da sua carreira</h1>
-        <form action="https://api.sheetmonkey.io/form/89zmYDfPCSdPngwFj5gmfA" method="post">
-            <input type="text" placeholder="Nome" name="Name" required>
-            <input type="email" placeholder="E-mail" name="Email" required>
-            <input type="number" placeholder="Telefone" name="Phone" required>
-            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-            <input id="button" type="submit" value="Acesse a ementa grátis">
-        </form>
-    </section>
-
-
-    <!--SCRIPT DO CARROSSEL-->
-
-    <script src="/src/index.js"></script>
-
-
-    <!--Created-by---DDR23-André-Campos-->
-    
+  <!--Created-by---DDR23-André-Campos-->
 </body>
+
 </html>

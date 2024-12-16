@@ -1,4 +1,4 @@
-# atividade---FRONTEND---landingpage-curso-tech---Escola-DNC
+# curso-tech-frontend
 
 ## Sobre o projeto
 Site com informações, formulário de captura e redirecionamento para ementa da formção de Tecnologia da Escola DNC
